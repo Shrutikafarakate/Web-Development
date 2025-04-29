@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="student.css"?>
+
+<students>
+    <heading>Student Information</heading>
+
+    <student>
+        <name class="Name">John Carter</name>
+        <rollno class="Roll No">201</rollno>
+        <course class="Course">Mechanical Engineering</course>
+        <year class="Year">Final Year</year>
+        <grade class="Grade">A</grade>
+    </student>
+
+    <student>
+        <name class="Name">Emily Rose</name>
+        <rollno class="Roll No">202</rollno>
+        <course class="Course">Electrical Engineering</course>
+        <year class="Year">3rd Year</year>
+        <grade class="Grade">B+</grade>
+    </student>
+
+    <student>
+        <name class="Name">Michael Lee</name>
+        <rollno class="Roll No">203</rollno>
+        <course class="Course">Civil Engineering</course>
+        <year class="Year">2nd Year</year>
+        <grade class="Grade">A+</grade>
+    </student>
+
+    <student>
+        <name class="Name">Sophia Turner</name>
+        <rollno class="Roll No">204</rollno>
+        <course class="Course">Computer Applications</course>
+        <year class="Year">1st Year</year>
+        <grade class="Grade">B</grade>
+    </student>
+</students>

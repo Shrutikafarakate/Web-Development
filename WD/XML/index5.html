@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XML Assignments</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(to right, #8a2be2, #ff007f, #ff6347); /* Purple, Violet, Red gradient */
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: #333;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header {
+      margin-bottom: 40px;
+      font-size: 3rem;
+      font-weight: bold;
+      color: #4b0082;
+      animation: fadeInDown 1s ease;
+      letter-spacing: 2px;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .box-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      animation: fadeIn 1.2s ease;
+    }
+
+    .box {
+      width: 280px;
+      padding: 25px;
+      border-radius: 15px;
+      background: rgba(255, 255, 255, 0.7);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      transition: all 0.4s ease;
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    }
+
+    .box a {
+      text-decoration: none;
+      color: #fff;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      padding: 15px 20px;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      display: block;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .box a:hover {
+      background: linear-gradient(135deg, #5f0fca, #1f6dfc);
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      .box-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      header {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    XML Assignments
+  </header>
+
+  <div class="box-container">
+    <div class="box">
+      <a href="XML_CSS/index4.html">XML_CSS Assignments</a>
+    </div>
+    <div class="box">
+      <a href="XML transformation using XSL/index3.html">XML Transformation using XSL</a>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shrutika Farakate - Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(to right, #a0c4ff, #e2b97f); /* Soft pastel gradient */
+      padding: 30px;
+      color: #333;
+    }
+
+    h1, h2 {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .profile-header {
+      text-align: center;
+      background: linear-gradient(135deg, #ffffff, #f0f0f0); 
+      border-radius: 12px;
+      padding: 30px 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      color: #333;
+      animation: fadeUp 1s ease forwards;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .profile-header:hover {
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .profile-header img {
+      width: 180px;
+      height: 180px;
+      border-radius: 10px;
+      border: 4px solid #fff;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .profile-header img:hover {
+      transform: scale(1.05);
+    }
+
+    .card {
+      background: #fff;
+      border-left: 6px solid #00b4db;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeUp 0.8s ease forwards;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    }
+
+    .card:nth-of-type(2) { animation-delay: 0.3s; }
+    .card:nth-of-type(3) { animation-delay: 0.6s; }
+    .card:nth-of-type(4) { animation-delay: 0.9s; }
+    .card:nth-of-type(5) { animation-delay: 1.2s; }
+    .card:nth-of-type(6) { animation-delay: 1.5s; }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      border-bottom: 2px solid #ffa726;
+      padding-bottom: 5px;
+      color: #444;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+
+    p {
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .card ul li {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #333;
+    }
+
+    @media (max-width: 600px) {
+      .profile-header img {
+        width: 120px;
+        height: 120px;
+      }
+
+      .card {
+        padding: 15px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="profile-header">
+      <h2>Resume</h2>
+      <img src="Photo.jpeg" alt="Profile Picture">    
+      <h1>Shrutika Farakate</h1>
+      <p>Email: shrutikafarakate9982@gmail.com<br> Mobile No.: 9373820893</p>
+    </div>
+
+    <div class="card">
+      <h2>Objective</h2>
+      <p>To apply my knowledge of computer science, programming, and full-stack development to contribute effectively to innovative tech projects. I aim to join an organization where I can continuously grow, solve real-world problems, and bring value through smart solutions and teamwork.</p>
+    </div>
+
+    <div class="card">
+      <h2>Education</h2>
+      <ul>
+        <li>
+          <strong>Bachelor of Technology (BTech) in Computer Science</strong><br>
+          D.Y. Patil College of Engineering & Technology<br>
+          CGPA: 9.4/10 
+        </li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <strong>URL Shortener Web App</strong><br>
+          Developed a user-friendly web application using Go that allows users to register, log in, and create short URLs with optional expiry dates. Implemented session-based authentication and MongoDB for storing user and URL data.
+        </li>
+        <li>
+          <strong>Task Manager CLI (Go)</strong><br>
+          Built a command-line interface task management tool in Go using Cobra and BoltDB. The application allows users to add, delete, and mark tasks, providing an efficient way to manage to-do lists from the terminal.
+        </li>
+        <li>
+          <strong>Online Bakery Website</strong><br>
+          Designed a fully responsive e-commerce website for a bakery using HTML, CSS, and JavaScript. Features include product browsing, a shopping cart, order form validation, and a modern user interface.
+        </li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Skills</h2>
+      <ul>
+        <li>Programming Languages: C, C++, Java, Python, Go</li>
+        <li>Web Development: HTML, CSS, JavaScript</li>
+        <li>Database Management: MySQL</li>
+        <li>Version Control: Git, GitHub</li>
+        <li>Tools & Technologies: Flutter, Go</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Python Certification - Cisco</li>
+        <li>Juniper Networking Certification - EduSkill</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
