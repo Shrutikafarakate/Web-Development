@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Centered Image Assignment</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #fdfbfb, #ebedee);
+      color: #333;
+    }
+
+    header {
+      background-color: #00796b;
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    section {
+      width: 100%;
+      max-width: 800px;
+      margin-bottom: 50px;
+      background: #ffffffdd;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.05);
+      padding: 30px;
+      text-align: center;
+    }
+
+    section h2 {
+      color: #00796b;
+      margin-top: 0;
+    }
+
+    p {
+      font-size: 17px;
+      color: #555;
+    }
+
+    img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      margin-top: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.03);
+    }
+
+    .link-img {
+      border: 3px solid #00796b;
+    }
+
+    .map-container img {
+      max-width: 400px;
+    }
+
+    @media (max-width: 768px) {
+      img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Assignment 5: HTML Images</h1>
+</header>
+
+<div class="container">
+
+  <section>
+    <h2>HTML Image</h2>
+    <img src="pic_trulli.jpg" alt="Trulli">
+  </section>
+
+  <section>
+    <h2>Alternative Text</h2>
+    <p>The alt attribute gives context when the image can’t be displayed or for screen readers.</p>
+    <img src="img_chania.jpg" alt="Flowers in Chania">
+  </section>
+
+  <section>
+    <h2>Image with Custom Size</h2>
+    <p>Using inline style to set width and height:</p>
+    <img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:400px;">
+  </section>
+
+ 
+
+  <section>
+    <h2>Images on Another Server</h2>
+    <img src="https://www.pixelstalk.net/wp-content/uploads/2016/08/Best-Nature-Full-HD-Images-For-Desktop.jpg" alt="Nature Image">
+  </section>
+
+  <section>
+    <h2>Animated GIF</h2>
+    <p>GIFs bring motion into web pages:</p>
+    <img src="programming.gif" alt="Programming animation" style="width:120px;height:120px;">
+  </section>
+
+  <section>
+    <h2>Image as a Link</h2>
+
+<p>The image is a link. You can click on it.</p>
+
+    <a href="https://photographylife.com/wp-content/uploads/2014/09/Nikon-D750-Image-Samples-2.jpg">
+      <img class="link-img" src="road-1072823__340.jpg" alt="Click to view larger">
+    </a>
+  </section>
+
+  <section class="map-container">
+    <h2>Image Map</h2>
+    <p>Click on the parts of the image to go to relevant links:</p>
+    <img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+    <map name="workmap">
+      <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://th.bing.com/th/id/OIP.EoJvVpBnjpiJr1JjS1P8jAHaE7?rs=1&pid=ImgDetMain">
+      <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://cdn1.smartprix.com/rx-ibsJ2hNrF-w1200-h1200/bsJ2hNrF.jpg">
+      <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="https://th.bing.com/th/id/OIP.HLVUqcR3whtEVAf5wY-jxAHaEo?rs=1&pid=ImgDetMain">
+    </map>
+  </section>
+
+</div>
+
+</body>
+</html>

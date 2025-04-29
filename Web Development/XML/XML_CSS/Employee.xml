@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+
+<employee>
+    <heading>Employee Details</heading>
+
+    <employeeInfo>
+        <id>101</id>
+        <name>John Doe</name>
+        <designation>Software Engineer</designation>
+        <department>IT</department>
+        <salary>70000</salary>
+        <joiningDate>2020-05-15</joiningDate>
+    </employeeInfo>
+
+    <employeeInfo>
+        <id>102</id>
+        <name>Jane Smith</name>
+        <designation>Project Manager</designation>
+        <department>IT</department>
+        <salary>95000</salary>
+        <joiningDate>2018-03-20</joiningDate>
+    </employeeInfo>
+
+    <employeeInfo>
+        <id>103</id>
+        <name>Michael Brown</name>
+        <designation>HR Specialist</designation>
+        <department>Human Resources</department>
+        <salary>60000</salary>
+        <joiningDate>2021-01-10</joiningDate>
+    </employeeInfo>
+
+    <employeeInfo>
+        <id>104</id>
+        <name>Sarah Williams</name>
+        <designation>Marketing Manager</designation>
+        <department>Marketing</department>
+        <salary>80000</salary>
+        <joiningDate>2019-08-30</joiningDate>
+    </employeeInfo>
+
+    <employeeInfo>
+        <id>105</id>
+        <name>David Lee</name>
+        <designation>Finance Analyst</designation>
+        <department>Finance</department>
+        <salary>75000</salary>
+        <joiningDate>2017-06-25</joiningDate>
+    </employeeInfo>
+</employee>

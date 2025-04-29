@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="styles.css"?>
+
+<books>
+    <heading>Book Collection</heading>
+    
+    <book>
+        <title>Data Structures and Algorithms</title>
+        <author>Mark Allen Weiss</author>
+        <publisher>Addison-Wesley</publisher>
+        <edition>Edition -: 4</edition>
+        <price>Price -: 500</price>
+    </book>
+    
+    <book>
+        <title>The Art of Computer Programming</title>
+        <author>Donald E. Knuth</author>
+        <publisher>Prentice Hall</publisher>
+        <edition>Edition -: 3</edition>
+        <price>Price -: 1500</price>
+    </book>
+    
+    <book>
+        <title>Introduction to Algorithms</title>
+        <author>Thomas H. Cormen</author>
+        <publisher>MIT Press</publisher>
+        <edition>Edition -: 2</edition>
+        <price>Price -: 1200</price>
+    </book>
+    
+    <book>
+        <title>Computer Programming in C</title>
+        <author>Brian W. Kernighan</author>
+        <publisher>Prentice Hall</publisher>
+        <edition>Edition -: 2</edition>
+        <price>Price -: 800</price>
+    </book>
+    
+    <book>
+        <title>Design Patterns: Elements of Reusable Object-Oriented Software</title>
+        <author>Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides</author>
+        <publisher>Addison-Wesley</publisher>
+        <edition>Edition -: 1</edition>
+        <price>Price -: 1000</price>
+    </book>
+</books>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Text Formatting</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #b388eb, #f8bbd0, #c8e6c9); /* violet, pink, green */
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #6a1b9a;
+            text-shadow: 1px 1px 2px #ccc;
+        }
+
+        h4 {
+            background-color: #ede7f6;
+            padding: 10px;
+            width: fit-content;
+            border-left: 5px solid #6a1b9a;
+            font-size: 1rem;
+            color: #4a148c;
+            border-radius: 4px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            background-color: #ffffff;
+            padding: 12px;
+            margin: 10px 0;
+            border-left: 4px solid #7b1fa2;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-radius: 6px;
+        }
+
+        blockquote {
+            background-color: #f3e5f5;
+            padding: 15px;
+            margin-left: 20px;
+            border-left: 5px solid #7e57c2;
+            font-style: italic;
+            color: #333;
+            border-radius: 5px;
+        }
+
+        code {
+            background-color: #f1f1f1;
+            padding: 3px 6px;
+            font-family: monospace;
+            border-radius: 4px;
+        }
+
+        pre {
+            background-color: #f9f9f9;
+            padding: 10px;
+            font-family: monospace;
+            border-left: 5px solid #9575cd;
+            border-radius: 5px;
+            white-space: pre-wrap;
+        }
+
+        mark {
+            background-color: #fff176;
+            padding: 0 4px;
+        }
+
+        ins {
+            background-color: #c8e6c9;
+            text-decoration: none;
+            padding: 0 3px;
+        }
+
+        del {
+            background-color: #ffcdd2;
+            padding: 0 3px;
+        }
+
+        .pink {
+            color: #e91e63;
+            font-weight: bold;
+        }
+
+        .green {
+            color: #388e3c;
+            font-weight: bold;
+        }
+
+        p:hover {
+            background-color: #f3e5f5;
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+
+        <h1>Assignment 3: HTML Text Formatting</h1>
+
+        <p><strong>Bold text:</strong> <b><span class="pink">This is bold text.</span></b></p>
+        <p><strong>Italic text:</strong> <i>This is italic text.</i></p>
+        <p><strong>Underlined text:</strong> <u>This is underlined text.</u></p>
+        <p><strong>Strikethrough text:</strong> <s>This is strikethrough text.</s></p>
+        <p><strong>Superscript text:</strong> H<sup>2</sup>O (Water)</p>
+        <p><strong>Subscript text:</strong> CO<sub>2</sub> (Carbon Dioxide)</p>
+        <p><strong>Monospaced (Code) text:</strong> <code>This is monospaced text.</code></p>
+        <p><strong>Highlighted text:</strong> <mark>This is highlighted text.</mark></p>
+        <p><strong>Small text:</strong> <small>This is small text.</small></p>
+        <p><strong>Emphasized text:</strong> <em>This is emphasized text.</em></p>
+        <p><strong>Strong text:</strong> <strong class="green">This is strong text.</strong></p>
+        <p><strong>Inserted text:</strong> <ins>This is inserted text.</ins></p>
+        <p><strong>Deleted text:</strong> <del>This is deleted text.</del></p>
+        <p><strong>Quotation:</strong> <q>This is a short quotation.</q></p>
+        <p><strong>Blockquote:</strong></p>
+        <blockquote>
+            This is a blockquote used for longer quotes.
+        </blockquote>
+        <p><strong>Citation:</strong> <cite>This is a citation.</cite></p>
+        <p><strong>Preformatted text:</strong></p>
+        <pre>
+Line 1
+Line 2
+Line 3
+        </pre>
+
+        <h2>Combining Multiple Formats</h2>
+        <p><b><i><u class="green">This text is bold, italicized, and underlined.</u></i></b></p>
+
+    </div>
+
+</body>
+</html>
