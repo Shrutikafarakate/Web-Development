@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AstroSpace - Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 class="glow">🌌 Welcome to AstroSpace</h1>
+    <nav>
+        <a href="index.html" class="nav-btn">Home</a> |
+        <a href="about.html" class="nav-btn">About</a> 
+    </nav>
+    
+  </header>
+
+  <main>
+    <section class="components">
+      <h2>🪐 Explore Planets</h2>
+      <div class="planet-grid">
+        <a href="mercury.html"><img src="images/mercury.jpg" alt="Mercury" class="planet-icon"><br>Mercury</a>
+        <a href="venus.html"><img src="images/venus.jpg" alt="Venus" class="planet-icon"><br>Venus</a>
+        <a href="earth.html"><img src="images/earth.jpg" alt="Earth" class="planet-icon"><br>Earth</a>
+        <a href="mars.html"><img src="images/mars.jpg" alt="Mars" class="planet-icon"><br>Mars</a>
+        <a href="jupiter.html"><img src="images/jupiter.jpg" alt="Jupiter" class="planet-icon"><br>Jupiter</a>
+        <a href="saturn.html"><img src="images/saturn.jpg" alt="Saturn" class="planet-icon"><br>Saturn</a>
+        <a href="uranus.html"><img src="images/uranus.jpg" alt="Uranus" class="planet-icon"><br>Uranus</a>
+        <a href="neptune.html"><img src="images/neptune.jpg" alt="Neptune" class="planet-icon"><br>Neptune</a>
+      </div>
+    </section>
+
+    <section class="space-components">
+      <h2>✨ Other Space Components</h2>
+      <ul>
+        <li><a href="stars.html"><img src="images/stars.jpg" class="icon"> <br>Stars</a></li>
+        <li><a href="galaxies.html"><img src="images/galaxies.jpg" class="icon"><br>Galaxies</a></li>
+        <li><a href="comets.html"><img src="images/comets.jpg" class="icon"> <br>Comets</a></li>
+        <li><a href="blackholes.html"><img src="images/blackholes.jpg" class="icon"> <br>Black Holes</a></li>
+      </ul>
+    </section>
+
+    <section class="extras">
+      <h2>🌠 Fun Space Fact</h2>
+      <button onclick="displayFact()">Get Fact</button>
+      <p id="fact-display">Click above to learn something cool!</p>
+    </section>
+  </main>
+
+  <script>
+    
+    function toggleMode() {
+      const body = document.body;
+      body.classList.toggle('dark-mode');
+    }
+
+    
+    function displayFact() {
+      const facts = [
+        "A day on Venus is longer than a year on Venus!",
+        "There are more stars in the universe than grains of sand on Earth.",
+        "A single teaspoon of a neutron star would weigh about 6 billion tons."
+      ];
+      const factDisplay = document.getElementById('fact-display');
+      factDisplay.innerText = facts[Math.floor(Math.random() * facts.length)];
+    }
+
+    
+    window.onload = function() {
+      
+      const currentHour = new Date().getHours();
+      if (currentHour >= 18) {
+        toggleMode();
+      }
+    }
+  </script>
+</body>
+</html>

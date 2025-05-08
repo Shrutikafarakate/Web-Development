@@ -1,0 +1,318 @@
+:root {
+    --bg-color: #0d0d2b;
+    --text-color: #ffffff;
+    --accent-color: #4fc3f7;
+    --card-bg: rgba(255, 255, 255, 0.05);
+    --hover-bg: rgba(255, 255, 255, 0.1);
+    --button-hover-bg: #29b6f6;
+    --button-color: #000;
+    --primary-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: var(--primary-font);
+    background: url('images/image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: var(--bg-color); 
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 15px #000;
+}
+
+h1.glow {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    text-shadow: 0 0 10px var(--accent-color), 0 0 20px #2196f3, 0 0 30px #2196f3;
+    animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        text-shadow: 0 0 10px var(--accent-color);
+    }
+    50% {
+        text-shadow: 0 0 20px var(--accent-color), 0 0 30px #2196f3;
+    }
+}
+
+nav {
+    margin: 1rem 0;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 1rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+button {
+    background-color: var(--accent-color);
+    color: var(--button-color);
+    border: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: var(--button-hover-bg);
+    transform: scale(1.05);
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: var(--card-bg); 
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+
+.planet-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    justify-items: center;
+    margin-top: 2rem;
+}
+
+.planet-grid a {
+    text-align: center;
+    color: var(--text-color);
+    text-decoration: none;
+    background: var(--card-bg);
+    padding: 1rem;
+    border-radius: 12px;
+    transition: transform 0.3s, background-color 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.planet-grid a:hover {
+    background-color: var(--hover-bg);
+    transform: translateY(-5px);
+}
+
+.planet-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s;
+    box-shadow: 0 0 10px #000;
+}
+
+.planet-grid a:hover .planet-icon {
+    transform: scale(1.1);
+}
+
+.planet-grid a span {
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    transition: color 0.3s;
+}
+
+.planet-grid a:hover span {
+    color: var(--accent-color);
+}
+
+
+.space-components ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1.5rem;
+}
+
+.space-components li {
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.space-components li:hover {
+    background-color: var(--hover-bg);
+    transform: translateY(-5px);
+}
+
+.space-components a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0.5rem;
+    transition: transform 0.3s;
+}
+
+.space-components li:hover .icon {
+    transform: rotate(10deg) scale(1.1);
+}
+
+.extras {
+    text-align: center;
+}
+
+#fact-display {
+    margin-top: 1rem;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #f1f1f1;
+    transition: color 0.3s;
+}
+
+button#fact-btn, button#quiz-btn {
+    background-color: var(--accent-color);
+    color: #111;
+    padding: 0.8rem 1.4rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 2rem;
+}
+
+button#fact-btn:hover, button#quiz-btn:hover {
+    background-color: #29b6f6;
+    transform: scale(1.05);
+}
+
+body.light-mode {
+    --bg-color: #f9f9f9;
+    --text-color: #111;
+    --card-bg: rgba(0, 0, 0, 0.05);
+    --hover-bg: rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode header {
+    background-color: #f1f1f1;
+}
+
+body.light-mode button {
+    background-color: #29b6f6;
+    color: #111;
+}
+
+body.light-mode nav a {
+    color: #111;
+}
+
+body.light-mode .space-components li,
+body.light-mode .planet-grid a {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+
+footer {
+    background-color: #111;
+    padding: 1.5rem 0;
+    text-align: center;
+    color: var(--text-color);
+}
+
+footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 1rem;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: var(--button-hover-bg);
+}
+
+footer p {
+    font-size: 1rem;
+    color: #888;
+}
+
+footer .social-links {
+    margin-top: 1rem;
+}
+
+footer .social-links a {
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+    color: var(--accent-color);
+}
+
+
+body.about-page {
+    background: url('images/about.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif; 
+    color: #fff;
+}
+
+.about-info {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.about-info h2, .about-info p {
+    color: #fff;
+}
+
+
+.back-home {
+    display: inline-block;
+    padding: 0.7rem 1.2rem;
+    background-color: var(--accent-color);
+    color: var(--button-color);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 2rem;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.back-home:hover {
+    background-color: var(--button-hover-bg);
+    transform: scale(1.05);
+    color: var(--button-color);
+}
